@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NM's OPALDENTZ Multispeciality Dental Clinic</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        opal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-opal-700 text-white py-2 text-sm hidden md:block">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex space-x-6">
+                <span><i class="fas fa-phone-alt mr-2"></i>8169755219 / 9395955219</span>
+                <span><i class="fas fa-clock mr-2"></i>Mon-Sat: 9AM - 9PM</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#location" class="hover:text-opal-100">Dispur, Guwahati</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-opal-700 flex items-center gap-2">
+                    <i class="fas fa-tooth text-3xl"></i>
+                    <div>
+                        <span class="block leading-none">NM's OPALDENTZ</span>
+                        <span class="text-xs text-gray-500 font-medium tracking-wider">Multispeciality Dental Clinic</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center font-medium">
+                    <a href="#home" class="text-gray-600 hover:text-opal-600 transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-opal-600 transition">About Us</a>
+                    <a href="#services" class="text-gray-600 hover:text-opal-600 transition">Services</a>
+                    <a href="#why-choose-us" class="text-gray-600 hover:text-opal-600 transition">Why Us</a>
+                    <a href="#contact" class="bg-opal-600 text-white px-5 py-2.5 rounded-full hover:bg-opal-700 transition shadow-lg transform hover:-translate-y-0.5">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-opal-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+                <a href="#home" class="block py-3 text-gray-600 hover:text-opal-600">Home</a>
+                <a href="#about" class="block py-3 text-gray-600 hover:text-opal-600">About Us</a>
+                <a href="#services" class="block py-3 text-gray-600 hover:text-opal-600">Services</a>
+                <a href="#why-choose-us" class="block py-3 text-gray-600 hover:text-opal-600">Why Us</a>
+                <a href="#contact" class="block py-3 text-opal-600 font-bold">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[600px] flex items-center relative">
+        <div class="container mx-auto px-6 relative z-10 text-center md:text-left">
+            <div class="md:w-2/3 lg:w-1/2">
+                <span class="bg-opal-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block uppercase tracking-wide">Welcome to Opaldentz</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Bright Smiles. <br>
+                    Gentle Care. <br>
+                    <span class="text-opal-400">Trusted Expertise.</span>
+                </h1>
+                <p class="text-lg text-gray-100 mb-8 leading-relaxed">
+                    At Opaldentz, your smile is our top priority. Discover complete dental care under one roof — from routine checkups to advanced cosmetic transformations.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-opal-500 hover:bg-opal-600 text-white text-lg font-semibold px-8 py-3 rounded-full transition shadow-lg text-center">
+                        Book Your Visit
+                    </a>
+                    <a href="tel:8169755219" class="bg-white hover:bg-gray-100 text-opal-700 text-lg font-semibold px-8 py-3 rounded-full transition shadow-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop" alt="Dental Care" class="rounded-2xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-opal-100 rounded-full -z-0"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-opal-100 rounded-full -z-0"></div>
+                </div>
+                
+                <!-- Content -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About <span class="text-opal-600">Opaldentz</span></h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Opaldentz Multispeciality Dental Clinic, we combine years of experience with a passion for patient comfort to deliver top-notch dental care. Located at Chandas Tower, Hatigaon Main Road, Dispur (opposite Hotel Riviera), our clinic is designed to provide a calm, welcoming environment — where every patient feels at ease.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our team of skilled dentists brings over a decade of experience across general dentistry, cosmetic treatments, implants, and pediatric care. We believe in a patient-first approach — listening carefully to your concerns and customizing treatment plans to suit your needs.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-opal-100 rounded-full flex items-center justify-center text-opal-600">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="font-medium">10+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-opal-100 rounded-full flex items-center justify-center text-opal-600">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <span class="font-medium">Modern Facilities</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-opal-100 rounded-full flex items-center justify-center text-opal-600">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <span class="font-medium">Patient-First Approach</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-opal-100 rounded-full flex items-center justify-center text-opal-600">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <span class="font-medium">Compassionate Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of dental services designed for every need, from prevention to cosmetic enhancements.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Preventive -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border-t-4 border-opal-500">
+                    <div class="w-14 h-14 bg-opal-100 rounded-lg flex items-center justify-center text-opal-600 text-2xl mb-6">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Preventive & General</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Check-Up & Consultation</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Digital X-Rays</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Cleaning & Polishing</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Restoration & Fillings</li>
+                    </ul>
+                </div>
+
+                <!-- Cosmetic -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border-t-4 border-opal-500">
+                    <div class="w-14 h-14 bg-opal-100 rounded-lg flex items-center justify-center text-opal-600 text-2xl mb-6">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cosmetic & Aesthetic</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Teeth Whitening</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Porcelain Veneers</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Crowns & Bridges</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Inlays & Onlays</li>
+                    </ul>
+                </div>
+
+                <!-- Orthodontics -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border-t-4 border-opal-500">
+                    <div class="w-14 h-14 bg-opal-100 rounded-lg flex items-center justify-center text-opal-600 text-2xl mb-6">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Orthodontics</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Orthodontic Braces</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Clear Aligners</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Teeth Alignment</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Smile Correction</li>
+                    </ul>
+                </div>
+
+                <!-- Restorative -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border-t-4 border-opal-500">
+                    <div class="w-14 h-14 bg-opal-100 rounded-lg flex items-center justify-center text-opal-600 text-2xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Restorative & Advanced</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Root Canal Treatment</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Wisdom Tooth Removal</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Removable Dentures</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Dental Implants</li>
+                    </ul>
+                </div>
+
+                <!-- Pediatric -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border-t-4 border-opal-500">
+                    <div class="w-14 h-14 bg-opal-100 rounded-lg flex items-center justify-center text-opal-600 text-2xl mb-6">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pediatric Dentistry</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Specialized dental care for children, focusing on creating a positive, fear-free environment.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Cavity Prevention</li>
+                        <li><i class="fas fa-check text-opal-500 text-xs mr-2"></i>Habit Counseling</li>
+                    </ul>
+                </div>
+
+                <!-- Emergency/CTA Card -->
+                <div class="bg-opal-600 p-8 rounded-xl shadow-xl flex flex-col justify-center items-center text-center text-white">
+                    <i class="fas fa-calendar-check text-5xl mb-6 opacity-90"></i>
+                    <h3 class="text-2xl font-bold mb-4">Book An Appointment</h3>
+                    <p class="mb-6 opacity-90">Ready for your transformation? Schedule your visit today.</p>
+                    <a href="#contact" class="bg-white text-opal-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition w-full">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose <span class="text-opal-600">Opaldentz?</span></h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-opal-100 text-opal-600">
+                                    <i class="fas fa-hospital-alt text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Holistic Care Under One Roof</h4>
+                                <p class="mt-1 text-gray-600">From checkups to implants, we cover every branch of dental care.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-opal-100 text-opal-600">
+                                    <i class="fas fa-user-nurse text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Experienced & Caring Team</h4>
+                                <p class="mt-1 text-gray-600">Dentists with 10+ years of experience, trained to handle a wide spectrum of needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-opal-100 text-opal-600">
+                                    <i class="fas fa-pump-medical text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Modern, Hygienic Clinic</h4>
+                                <p class="mt-1 text-gray-600">Sterilised equipment and friendly staff praised by patients.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-opal-100 text-opal-600">
+                                    <i class="fas fa-clock text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Flexible Scheduling</h4>
+                                <p class="mt-1 text-gray-600">Open 9 AM – 9 PM (Mon-Sat); Sunday by appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop" alt="Modern Dental Clinic" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-opal-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Patient Stories</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-md text-left relative">
+                    <i class="fas fa-quote-left text-4xl text-opal-200 absolute top-6 left-6"></i>
+                    <p class="text-gray-600 relative z-10 mb-4 pt-6">"Exceptional service! Friendly staff, expert care, and modern facilities — made my visit stress-free. Highly recommended."</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-3 text-sm text-gray-500 font-semibold">- Verified Patient (Justdial)</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md text-left relative">
+                    <i class="fas fa-quote-left text-4xl text-opal-200 absolute top-6 left-6"></i>
+                    <p class="text-gray-600 relative z-10 mb-4 pt-6">"Clean & hygienic, gentle care, painless procedure — worth the visit. The team really takes care of you."</p>
+                    <div class="flex items-center">
+                        <div class="text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-3 text-sm text-gray-500 font-semibold">- Verified Patient (Justdial)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mt-8 text-gray-500">Real feedback from our patients validates our commitment to excellence.</p>
+        </div>
+    </section>
+
+    <!-- Gallery (Placeholder) -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10">Our Clinic</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-48 overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1516574187841-69301976e499?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Clinic Interior">
+                </div>
+                <div class="h-48 overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b63?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Dental Equipment">
+                </div>
+                <div class="h-48 overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Smiling Patient">
+                </div>
+                <div class="h-48 overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1445527697940-6170001a29ce?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover hover:scale-110 transition duration-500" alt="Dental Staff">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Info -->
+                <div class="lg:w-1/3 space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Visit Us</h2>
+                        <p class="text-gray-400">We look forward to seeing you.</p>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-opal-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Address</h4>
+                            <p class="text-gray-300">Chandas Tower, 2nd Floor, Hatigaon Main Road, opposite Hotel Riviera, Dispur, Guwahati – 781006.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone-alt text-opal-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Phone</h4>
+                            <p class="text-gray-300">8169755219 / 9395955219</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-clock text-opal-500 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Opening Hours</h4>
+                            <p class="text-gray-300">Mon - Sat: 9:00 AM - 9:00 PM</p>
+                            <p class="text-gray-400 text-sm">Sunday: By Appointment Only</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <a href="tel:8169755219" class="inline-block bg-opal-600 hover:bg-opal-500 text-white font-bold py-3 px-8 rounded-full transition w-full text-center">
+                            Call to Book Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="lg:w-2/3 h-96 bg-gray-800 rounded-xl overflow-hidden shadow-2xl">
+                     <!-- Google Maps Embed (Pointing to Hatigaon Main Road area approx) -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.442168537554!2d91.7915!3d26.1495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA4JzU4LjIiTiA5McKwNDcnMjkuNCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-10 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-2xl font-bold text-white tracking-tight">NM's OPALDENTZ</span>
+                    <p class="text-sm mt-1">Bright Smiles. Gentle Care.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#home" class="hover:text-white transition">Home</a>
+                    <a href="#about" class="hover:text-white transition">About</a>
+                    <a href="#services" class="hover:text-white transition">Services</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="text-center mt-10 text-xs border-t border-gray-800 pt-6">
+                &copy; 2025 NM’s Opaldentz Multispeciality Dental Clinic. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
